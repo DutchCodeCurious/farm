@@ -3,7 +3,7 @@ import requests
 
 
 def test_website_online():
-    url = "159.89.8.96"
+    url = "159.89.8.96/"
 
     response = requests.get(url)
 
