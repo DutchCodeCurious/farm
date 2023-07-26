@@ -39,6 +39,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{secrets.PORT}}
           script: |
-            cd /home/farm
-            rm -rf *
-            cp -r ${{ github.workspace }}/app/*
+            ssh root@159.89.8.96 'cd /home/farm && git pull'
