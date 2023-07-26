@@ -37,7 +37,6 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.DROPLET_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.PORT }}
           script: |
             cd /home/farm
             rm -rf *
