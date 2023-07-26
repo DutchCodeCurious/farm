@@ -1,4 +1,4 @@
-from pytest import requests
+import requests
 
 
 def test_website_online():
