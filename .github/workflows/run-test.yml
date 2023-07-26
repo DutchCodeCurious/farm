@@ -26,3 +26,19 @@ jobs:
 
       - name: Run tests
         run: pytest
+
+      - name: Build website
+        run: |
+          source env/bin/activate
+          python main.py
+
+      - name: Deploy to DigitalOcean
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.DROPLET_IP }}
+          username: ${{ secrets.DROPLET_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /home/farm
+            rm -rf *
+            cp -r ${{ github.workspace }}/app/*
