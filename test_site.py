@@ -3,7 +3,7 @@ import requests
 
 
 def test_website_online():
-    sites = ["/", "/cow"]
+    sites = ["/", "/cw"]
     for i in sites:
         url = f"http://159.89.8.96{i}"
 
