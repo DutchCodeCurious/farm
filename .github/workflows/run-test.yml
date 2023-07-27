@@ -40,7 +40,7 @@ jobs:
           port: ${{secrets.PORT}}
 
       - name: Pull
-        run: ssh ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_IP }}"cd /home/farm && git checkout main && git pull && exit"
+        run: ssh ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_IP }} "cd /home/farm && git checkout main && git pull && exit"
 
       - name: cleanup
         run: rm -rf ~/.ssh
