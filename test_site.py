@@ -5,7 +5,7 @@ import requests
 def test_website_online():
     sites = ["/", "/cow"]
     for i in sites:
-        url = f"http://159.89.8.96{i}"
+        url = f"http://142.93.110.2{i}"
 
         response = requests.get(url)
 
