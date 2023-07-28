@@ -40,7 +40,7 @@ jobs:
           port: ${{secrets.PORT}}
 
           script: |
-            mkdir test
-            cd test
-            git clone https://github.com/DutchCodeCurious/farm.git
+            cd ..
+            cd ${{ secrets.PATH }}
+            git pull https://github.com/DutchCodeCurious/farm.git
             echo "Let's GOOO"
