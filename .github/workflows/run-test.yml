@@ -39,14 +39,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{secrets.PORT}}
 
-      - name: install ssh keys
-        run: |
-          install -m 600 -D /dev/null ~/.ssh/id_rsa
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.DROPLET_IP }} > ~/.ssh/known_hosts
-
-      - name: connect and pull
-        run: ssh ${{ secrets.DROPLET_USERNAME }}@${{ secrets.DROPLET_IP }} "cd ~/home/farm/ && git checkout main && git pull && exit"
-
-      - name: cleanup
-        run: rm -rf ~/.ssh
+          script: |
+            mkdir test
+            cd test
+            git clone git@github.com:DutchCodeCurious/farm-project.git
+            echo "Let's GOOO"
