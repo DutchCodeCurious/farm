@@ -42,5 +42,5 @@ jobs:
           script: |
             mkdir test
             cd test
-            git clone git@github.com:DutchCodeCurious/farm-project.git
+            git clone https://github.com/DutchCodeCurious/farm.git
             echo "Let's GOOO"
