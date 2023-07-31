@@ -58,7 +58,6 @@ def index():
     </head>
     <body>
         <div class="container">
-            <img src="https://example.com/construction.png" alt="Under Construction">
             <h1>We're Under Construction</h1>
             <p>We are currently working on something awesome. Please check back later!</p>
         </div>
