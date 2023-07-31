@@ -1,0 +1,3 @@
+Punten waar ik tegen aan ben gelopen: - Ik heb even moeite gehad met het juist opzetten van de workflows, maar uiteindelijk na veel zoek werk is het prima te doen geweest - Daarnaast heb ik moeite gehad met de juiste opzet van de ssh =, achteraf bleek dat ik een code dubbel in een bestand had gezet door te vaak gebruik te maken van de 1 command, die er voor zorgde dat een authorized_key file werd aangemaakt en de ssh_key er werd ingzet.
+
+uiteindelijk wat ik vooral van deze opdracht heb geleerd is het beter bijhouden van bepaalde keys en routes die ik gebruik zo dat ik makkelijker bepaalde handelingen kan schrijven.
