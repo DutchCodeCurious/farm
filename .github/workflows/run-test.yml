@@ -43,4 +43,4 @@ jobs:
             cd ..
             cd /home/farm/
             git pull https://github.com/DutchCodeCurious/farm.git
-            echo "Let's GOOO"
+            systemctl restart farm
