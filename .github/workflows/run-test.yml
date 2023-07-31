@@ -24,9 +24,6 @@ jobs:
           pip install requests pytest
           pip install -r requirements.txt
 
-      - name: Run tests
-        run: pytest
-
       - name: Build website
         run: |
           python main.py
@@ -44,3 +41,6 @@ jobs:
             cd /home/farm/
             git pull https://github.com/DutchCodeCurious/farm.git
             systemctl restart farm
+
+      - name: Run tests
+        run: pytest
